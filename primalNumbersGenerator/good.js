@@ -16,7 +16,7 @@ class BitVector {
     return this.store[~~(bit / 31)] & (1 << bit % 31);
   }
 }
-const MAX_PRIME = 200;
+const MAX_PRIME = 20;
 const sieve = new BitVector(MAX_PRIME);
 class Primes {
   static *stream() {
