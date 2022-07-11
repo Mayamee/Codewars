@@ -6,7 +6,6 @@ const solveExpression = (expression) =>
     .replace(/\+{2,}/g, "+")
     .replace(/\-\+/g, "-")
     .replace(/\d+(\.\d+)?\/\-?\d+(\.\d+)?/g, (match) => {
-      console.log(match);
       const numbers = match.split("/");
       return String(+numbers[0] / +numbers[1]);
     })
